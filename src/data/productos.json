@@ -1,65 +1,121 @@
 [
   {
-    "id": "haute42-t16-green",
-    "nombre": "Haute42 Haute Pad T16 (Aurora Green LED)",
+    "id": "cosmox-t12-1",
+    "nombre": "Cosmox T12 Leverless",
     "categoria": "Hitbox",
-    "imagen": "/productos/haute42-t16-green.jpg",
+    "imagen": "productos/cosmoxt12-1.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "haute42-t16-clear",
-    "nombre": "Haute42 Haute Pad T16 (Crystal Clear)",
+    "id": "cosmox-t12-2",
+    "nombre": "Cosmox T12 Leverless (Vista Lateral)",
     "categoria": "Hitbox",
-    "imagen": "/productos/haute42-t16-clear.jpg",
+    "imagen": "productos/cosmoxt12-2.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "haute42-t16-blue",
-    "nombre": "Haute42 Haute Pad T16 (Cyber Blue LED)",
+    "id": "haute16-black",
+    "nombre": "Haute42 C16 (Negro)",
     "categoria": "Hitbox",
-    "imagen": "/productos/haute42-t16-blue.jpg",
+    "imagen": "productos/haute16-black.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "brook-wingman-fgc2",
-    "nombre": "Brook Wingman FGC 2 Converter (PS5/PC)",
+    "id": "haute16-white",
+    "nombre": "Haute42 C16 (Blanco)",
+    "categoria": "Hitbox",
+    "imagen": "productos/haute16-white.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute13-white",
+    "nombre": "Haute42 C13 (Blanco)",
+    "categoria": "Hitbox",
+    "imagen": "productos/haute13-white.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute13-big-white",
+    "nombre": "Haute42 C13 Big (Blanco)",
+    "categoria": "Hitbox",
+    "imagen": "productos/haute13-big-white.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "guilekey16-black",
+    "nombre": "GuileKey G16 (Negro)",
+    "categoria": "Hitbox",
+    "imagen": "productos/guilekey16-black.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "guilekey16-white",
+    "nombre": "GuileKey G16 (Blanco)",
+    "categoria": "Hitbox",
+    "imagen": "productos/guilekey16-white1.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "m16plus-black",
+    "nombre": "M16+ Leverless (Negro)",
+    "categoria": "Hitbox",
+    "imagen": "productos/m16plus-black.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "sapphire-hitbox-1",
+    "nombre": "Sapphire Leverless",
+    "categoria": "Hitbox",
+    "imagen": "productos/sapphire1.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "brook-fgc1",
+    "nombre": "Brook Wingman FGC 1",
     "categoria": "Tecnología",
-    "imagen": "/productos/brook-wingman-fgc2.jpg",
+    "imagen": "productos/brook-converter-ps5.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "brook-wingman-fgc2-alt",
-    "nombre": "Brook Wingman FGC 2 Converter (Box Edition)",
+    "id": "brook-fgc2",
+    "nombre": "Brook Wingman FGC 2 (PS5/PC)",
     "categoria": "Tecnología",
-    "imagen": "/productos/brook-wingman-fgc2-alt.jpg",
+    "imagen": "productos/brook-wingman-fgc2.jpg",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "qanba-obsidian-2",
-    "nombre": "Qanba Obsidian 2 Arcade Stick",
-    "categoria": "Arcade Sticks",
-    "imagen": "/productos/stick-classic.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "mayflash-f500-elite",
-    "nombre": "Mayflash F500 Elite",
-    "categoria": "Arcade Sticks",
-    "imagen": "/productos/stick-classic.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "sanwa-jlf-lever",
-    "nombre": "Joystick Sanwa JLF-TP-8YT",
+    "id": "sanwa-jlf-black",
+    "nombre": "Joystick Sanwa JLF (Negro)",
     "categoria": "Joysticks",
-    "imagen": "/productos/stick-classic.png",
+    "imagen": "productos/sanwa-jlf-joy-black.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "sanwa-obsf-buttons",
-    "nombre": "Botones Sanwa OBSF-30 (Pack x10)",
+    "id": "sanwa-jlf-white",
+    "nombre": "Joystick Sanwa JLF (Blanco)",
+    "categoria": "Joysticks",
+    "imagen": "productos/sanwa-jlf-joy-white.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "black-buttons",
+    "nombre": "Botones Premium (Negro, Pack x10)",
     "categoria": "Repuestos",
-    "imagen": "/productos/buttons-rgb.png",
+    "imagen": "productos/black-buttons.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "white-buttons",
+    "nombre": "Botones Premium (Blanco, Pack x10)",
+    "categoria": "Repuestos",
+    "imagen": "productos/white-buttons.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "white-buttons-joy",
+    "nombre": "Kit Botones + Joystick (Blanco)",
+    "categoria": "Repuestos",
+    "imagen": "productos/white-buttons&joy.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   }
 ]

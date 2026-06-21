@@ -2,38 +2,40 @@ import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 
 export default function Categories() {
+  const BASE = import.meta.env.BASE_URL
   const categories = [
     {
       name: 'Hitbox',
       desc: 'Controladores sin palanca (leverless) para máxima velocidad de ejecución y precisión de inputs.',
-      image: '/productos/hitbox-pro.png',
+      image: `${BASE}productos/hitbox-cover.png`,
       size: 'md:col-span-6 lg:col-span-7'
     },
     {
       name: 'Arcade Sticks',
       desc: 'El feeling clásico del salón arcade combinado con tecnología competitiva moderna.',
-      image: '/productos/stick-classic.png',
+      image: `${BASE}productos/sapphire1.png`,
       size: 'md:col-span-6 lg:col-span-5'
     },
     {
       name: 'Joysticks',
       desc: 'Palancas de alta gama, tensores y restrictores para una calibración milimétrica.',
-      image: '/productos/stick-classic.png',
+      image: `${BASE}productos/sanwa-jlf-joy-white.png`,
       size: 'md:col-span-6 lg:col-span-4'
     },
     {
       name: 'Repuestos',
       desc: 'Botones premium, microswitches silenciosos, encoders USB y todo para tu modding.',
-      image: '/productos/buttons-rgb.png',
+      image: `${BASE}productos/white-buttons&joy.png`,
       size: 'md:col-span-6 lg:col-span-4'
     },
     {
       name: 'Tecnología',
-      desc: 'Accesorios inteligentes, adaptadores multi-consola y bolsos tácticos de transporte.',
-      image: '/productos/carry-bag.png',
+      desc: 'Accesorios inteligentes, adaptadores multi-consola y conversores para todas las plataformas.',
+      image: `${BASE}productos/brook-converter-ps5.png`,
       size: 'md:col-span-12 lg:col-span-4'
     }
   ]
+
 
   return (
     <section id="categorias" className="py-24 relative overflow-hidden">

@@ -4,33 +4,33 @@ export default function Gallery() {
   const BASE = import.meta.env.BASE_URL
   const images = [
     {
-      url: `${BASE}productos/haute42-t16-green.jpg`,
-      title: 'Haute42 T16 - Aurora Green',
+      url: `${BASE}productos/cosmoxt12-1.png`,
+      title: 'Cosmox T12 Leverless',
       span: 'lg:col-span-8 lg:row-span-2'
     },
     {
-      url: `${BASE}productos/brook-wingman-fgc2.jpg`,
-      title: 'Brook Wingman FGC 2 Converter',
+      url: `${BASE}productos/haute16-black.png`,
+      title: 'Haute42 C16 Negro',
       span: 'lg:col-span-4 lg:row-span-1'
     },
     {
-      url: `${BASE}productos/haute42-t16-blue.jpg`,
-      title: 'Haute42 T16 - Cyber Blue',
+      url: `${BASE}productos/guilekey16-white1.png`,
+      title: 'GuileKey G16 Blanco',
       span: 'lg:col-span-4 lg:row-span-1'
     },
     {
-      url: `${BASE}productos/haute42-t16-clear.jpg`,
-      title: 'Haute42 T16 - Crystal Clear',
+      url: `${BASE}productos/sapphire3.png`,
+      title: 'Sapphire Leverless',
       span: 'lg:col-span-4 lg:row-span-2'
     },
     {
-      url: `${BASE}productos/brook-wingman-fgc2-alt.jpg`,
-      title: 'Conversor Multiconsola FGC2',
+      url: `${BASE}productos/brook-converter-ps5.png`,
+      title: 'Brook Wingman FGC',
       span: 'lg:col-span-4 lg:row-span-1'
     },
     {
-      url: `${BASE}productos/buttons-rgb.png`,
-      title: 'Pulsadores Mecánicos Gamer',
+      url: `${BASE}productos/white-buttons.png`,
+      title: 'Botones Premium',
       span: 'lg:col-span-4 lg:row-span-1'
     }
   ]
