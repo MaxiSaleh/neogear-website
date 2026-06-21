@@ -1,0 +1,65 @@
+[
+  {
+    "id": "haute42-t16-green",
+    "nombre": "Haute42 Haute Pad T16 (Aurora Green LED)",
+    "categoria": "Hitbox",
+    "imagen": "/productos/haute42-t16-green.jpg",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-t16-clear",
+    "nombre": "Haute42 Haute Pad T16 (Crystal Clear)",
+    "categoria": "Hitbox",
+    "imagen": "/productos/haute42-t16-clear.jpg",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-t16-blue",
+    "nombre": "Haute42 Haute Pad T16 (Cyber Blue LED)",
+    "categoria": "Hitbox",
+    "imagen": "/productos/haute42-t16-blue.jpg",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "brook-wingman-fgc2",
+    "nombre": "Brook Wingman FGC 2 Converter (PS5/PC)",
+    "categoria": "Tecnología",
+    "imagen": "/productos/brook-wingman-fgc2.jpg",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "brook-wingman-fgc2-alt",
+    "nombre": "Brook Wingman FGC 2 Converter (Box Edition)",
+    "categoria": "Tecnología",
+    "imagen": "/productos/brook-wingman-fgc2-alt.jpg",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "qanba-obsidian-2",
+    "nombre": "Qanba Obsidian 2 Arcade Stick",
+    "categoria": "Arcade Sticks",
+    "imagen": "/productos/stick-classic.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "mayflash-f500-elite",
+    "nombre": "Mayflash F500 Elite",
+    "categoria": "Arcade Sticks",
+    "imagen": "/productos/stick-classic.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "sanwa-jlf-lever",
+    "nombre": "Joystick Sanwa JLF-TP-8YT",
+    "categoria": "Joysticks",
+    "imagen": "/productos/stick-classic.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "sanwa-obsf-buttons",
+    "nombre": "Botones Sanwa OBSF-30 (Pack x10)",
+    "categoria": "Repuestos",
+    "imagen": "/productos/buttons-rgb.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  }
+]

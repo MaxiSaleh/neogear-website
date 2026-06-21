@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="24" fill="#0d1117" />
+  <!-- Stylized gamepad layout / NeoGear 'N' and G -->
+  <path d="M30 30 V70 M30 30 L70 70 M70 30 V70" stroke="#44d17a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <circle cx="30" cy="50" r="6" fill="#ffffff" />
+  <circle cx="70" cy="50" r="6" fill="#ffffff" />
+</svg>

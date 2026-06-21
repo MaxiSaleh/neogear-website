@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0055d4;
+  --color-brand-orange: #ff4500;
+  --color-brand-yellow: #ffb700;
+  --color-brand-palm: #00aa55;
+  --color-brand-pink: #e6005c;
+  --color-brand-dark: #040811;
+  --color-brand-card: #0d1424;
+  --color-brand-border: rgba(255, 255, 255, 0.05);
+  --font-sans: 'Outfit', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #040811;
+  color: #f3f4f6;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #040811;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d1424;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0055d4;
+}
+
+/* Custom styles */
+.glass {
+  background: rgba(13, 20, 36, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffb700 0%, #ff4500 60%, #e6005c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px rgba(0, 85, 212, 0.2);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.2);
+}
+
+.glow-blue-hover:hover {
+  box-shadow: 0 0 30px rgba(0, 85, 212, 0.4);
+}
+
+.glow-orange-hover:hover {
+  box-shadow: 0 0 30px rgba(255, 69, 0, 0.4);
+}
+
+/* Retro Scanline CRT screen vibe */
+.crt-overlay {
+  position: relative;
+}
+
+.crt-overlay::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.12) 50%);
+  z-index: 2;
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Sega-inspired low poly / perspective grid */
+.sega-grid {
+  perspective: 300px;
+}
+
+.sega-grid-plane {
+  background-image: 
+    linear-gradient(to right, rgba(0, 85, 212, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 85, 212, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  transform: rotateX(60deg);
+  transform-origin: top center;
+}
+
+/* Masonry layout style support */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 1.5rem;
+}
