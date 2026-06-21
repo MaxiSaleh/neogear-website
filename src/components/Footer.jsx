@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Brand Info */}
         <div className="md:col-span-5 text-left flex flex-col items-start">
           <a href="#inicio" className="flex items-center mb-6 group transition-transform duration-300 hover:scale-105">
-            <img src="/logo.png" alt="NeoGear Logo" className="h-10 md:h-12 w-auto object-contain" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="NeoGear Logo" className="h-10 md:h-12 w-auto object-contain" />
           </a>
           <p className="text-gray-400 text-sm font-light leading-relaxed max-w-sm mb-6">
             Fabricantes de mandos de pelea y periféricos gamer de precisión en Córdoba, Argentina. Llevamos tu juego al máximo rendimiento competitivo.

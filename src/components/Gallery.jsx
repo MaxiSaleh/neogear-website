@@ -1,34 +1,35 @@
 import { motion } from 'framer-motion'
 
 export default function Gallery() {
+  const BASE = import.meta.env.BASE_URL
   const images = [
     {
-      url: '/productos/haute42-t16-green.jpg',
+      url: `${BASE}productos/haute42-t16-green.jpg`,
       title: 'Haute42 T16 - Aurora Green',
       span: 'lg:col-span-8 lg:row-span-2'
     },
     {
-      url: '/productos/brook-wingman-fgc2.jpg',
+      url: `${BASE}productos/brook-wingman-fgc2.jpg`,
       title: 'Brook Wingman FGC 2 Converter',
       span: 'lg:col-span-4 lg:row-span-1'
     },
     {
-      url: '/productos/haute42-t16-blue.jpg',
+      url: `${BASE}productos/haute42-t16-blue.jpg`,
       title: 'Haute42 T16 - Cyber Blue',
       span: 'lg:col-span-4 lg:row-span-1'
     },
     {
-      url: '/productos/haute42-t16-clear.jpg',
+      url: `${BASE}productos/haute42-t16-clear.jpg`,
       title: 'Haute42 T16 - Crystal Clear',
       span: 'lg:col-span-4 lg:row-span-2'
     },
     {
-      url: '/productos/brook-wingman-fgc2-alt.jpg',
+      url: `${BASE}productos/brook-wingman-fgc2-alt.jpg`,
       title: 'Conversor Multiconsola FGC2',
       span: 'lg:col-span-4 lg:row-span-1'
     },
     {
-      url: '/productos/buttons-rgb.png',
+      url: `${BASE}productos/buttons-rgb.png`,
       title: 'Pulsadores Mecánicos Gamer',
       span: 'lg:col-span-4 lg:row-span-1'
     }

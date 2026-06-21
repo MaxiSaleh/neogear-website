@@ -103,7 +103,7 @@ export default function Hero() {
               initial={{ y: 0 }}
               animate={{ y: [-8, 8, -8] }}
               transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
-              src="/productos/haute42-t16-green.jpg"
+              src={`${import.meta.env.BASE_URL}productos/haute42-t16-green.jpg`}
               alt="Haute42 Haute Pad T16"
               className="w-[90%] h-auto rounded-3xl border border-white/10 object-cover shadow-2xl filter drop-shadow-[0_20px_50px_rgba(0,85,212,0.25)]"
             />

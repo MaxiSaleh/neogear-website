@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo Image */}
         <a href="#inicio" className="flex items-center group transition-transform duration-300 hover:scale-105">
-          <img src="/logo.png" alt="NeoGear" className="h-10 md:h-12 w-auto object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="NeoGear" className="h-10 md:h-12 w-auto object-contain" />
         </a>
 
         {/* Desktop Links */}

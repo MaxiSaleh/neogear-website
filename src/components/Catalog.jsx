@@ -64,7 +64,7 @@ export default function Catalog() {
                 {/* Product Image Frame */}
                 <div className="aspect-[4/3] bg-brand-dark/50 relative overflow-hidden flex items-center justify-center p-6 border-b border-white/5">
                   <img
-                    src={prod.imagen}
+                    src={`${import.meta.env.BASE_URL}${prod.imagen.replace(/^\//, '')}`}
                     alt={prod.nombre}
                     loading="lazy"
                     className="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)]"
