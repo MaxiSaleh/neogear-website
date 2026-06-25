@@ -7,31 +7,31 @@ export default function Categories() {
     {
       name: 'Hitbox',
       desc: 'Controladores sin palanca (leverless) para máxima velocidad de ejecución y precisión de inputs.',
-      image: `${BASE}productos/Hitbox Cover/hitbox-cover.png`,
+      image: `${BASE}${'productos/Hitbox Cover/hitbox-cover.png'.split('/').map(encodeURIComponent).join('/')}`,
       size: 'md:col-span-6 lg:col-span-7'
     },
     {
       name: 'Arcade Sticks',
       desc: 'Fightsticks clásicos para la experiencia arcade purista. Ideales para Tekken y Street Fighter.',
-      image: `${BASE}productos/Qanba Sapphire/sapphire1.png`,
+      image: `${BASE}${'productos/Qanba Sapphire/sapphire1.png'.split('/').map(encodeURIComponent).join('/')}`,
       size: 'md:col-span-6 lg:col-span-5'
     },
     {
       name: 'Joysticks',
       desc: 'Palancas Sanwa JLF, Seimitsu y repuestos para mantener la precisión de tus movimientos.',
-      image: `${BASE}productos/Sanwa JLF Joystick (black-white)/sanwa-jlf-joy-white.png`,
+      image: `${BASE}${'productos/Sanwa JLF Joystick (black-white)/sanwa-jlf-joy-white.png'.split('/').map(encodeURIComponent).join('/')}`,
       size: 'md:col-span-4'
     },
     {
       name: 'Repuestos',
       desc: 'Botones mecánicos, switches, cables y accesorios para customizar y reparar tu equipo.',
-      image: `${BASE}productos/Sanwa Combo Joystick + 8 buttons/white-buttons&joy.png`,
+      image: `${BASE}${'productos/Sanwa Combo Joystick + 8 buttons/white-buttons&joy.png'.split('/').map(encodeURIComponent).join('/')}`,
       size: 'md:col-span-4'
     },
     {
       name: 'Tecnología',
       desc: 'Conversores Brook, placas universales y módulos para compatibilidad multiplataforma.',
-      image: `${BASE}productos/Brook PS5 FGC2/brook-converter-ps5.png`,
+      image: `${BASE}${'productos/Brook PS5 FGC2/brook-converter-ps5.png'.split('/').map(encodeURIComponent).join('/')}`,
       size: 'md:col-span-4'
     }
   ]

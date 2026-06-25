@@ -58,7 +58,7 @@ export default function ProductCard({ prod }) {
           {images.map((imgUrl, idx) => (
             <div key={idx} className="min-w-full flex-shrink-0 flex items-center justify-center snap-center p-6 relative">
               <img
-                src={`${import.meta.env.BASE_URL}${imgUrl.replace(/^\//, '')}`}
+                src={`${import.meta.env.BASE_URL}${imgUrl.replace(/^\//, '').split('/').map(encodeURIComponent).join('/')}`}
                 alt={`${prod.nombre} - vista ${idx + 1}`}
                 loading="lazy"
                 className="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)]"

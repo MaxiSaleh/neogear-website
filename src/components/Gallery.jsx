@@ -52,7 +52,7 @@ export default function Gallery() {
               {/* Image Container with aspect crop */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src={`${BASE}${img.url}`}
+                  src={`${BASE}${img.url.split('/').map(encodeURIComponent).join('/')}`}
                   alt={img.title}
                   loading="lazy"
                   className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out filter brightness-90 group-hover:brightness-75"
@@ -104,7 +104,7 @@ export default function Gallery() {
               className="relative max-w-6xl max-h-[85vh] w-full h-full flex flex-col items-center justify-center"
             >
               <img
-                src={`${BASE}${selectedImage.url}`}
+                src={`${BASE}${selectedImage.url.split('/').map(encodeURIComponent).join('/')}`}
                 alt={selectedImage.title}
                 className="w-full h-full object-contain filter drop-shadow-2xl rounded-lg"
               />
