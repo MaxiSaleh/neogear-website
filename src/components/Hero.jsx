@@ -9,11 +9,22 @@ export default function Hero() {
         {/* Sky gradient background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#03060f] via-[#05132e] to-[#040811]"></div>
         
-        {/* Retro perspective grid plane (Sega Virtua/Daytona style) */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[200%] h-[55%] origin-top [transform:perspective(400px)_rotateX(60deg)] border-t border-brand-blue/30 bg-[linear-gradient(to_bottom,rgba(0,85,212,0.12)_1px,transparent_1px),linear-gradient(to_right,rgba(0,85,212,0.12)_1px,transparent_1px)] bg-[size:45px_45px]"></div>
+        {/* Retro perspective grid plane (Sega Virtua/Daytona style) - inline style for GH Pages compat */}
+        <div
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[200%] h-[55%] origin-top border-t border-brand-blue/30"
+          style={{
+            transform: 'perspective(400px) rotateX(60deg)',
+            transformOrigin: 'top center',
+            backgroundImage: 'linear-gradient(to bottom, rgba(0,85,212,0.12) 1px, transparent 1px), linear-gradient(to right, rgba(0,85,212,0.12) 1px, transparent 1px)',
+            backgroundSize: '45px 45px',
+          }}
+        ></div>
         
-        {/* Dark radial glow mask to fade grid at the horizon and sides */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_60%,transparent_20%,#040811_80%)]"></div>
+        {/* Dark radial glow mask to fade grid at the horizon and sides - inline style for GH Pages compat */}
+        <div
+          className="absolute inset-0"
+          style={{ background: 'radial-gradient(ellipse at 50% 60%, transparent 20%, #040811 80%)' }}
+        ></div>
         <div className="absolute bottom-0 left-0 w-full h-[30%] bg-gradient-to-t from-[#040811] to-transparent"></div>
       </div>
 
