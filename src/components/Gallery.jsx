@@ -1,39 +1,22 @@
-import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { X } from 'lucide-react'
+import galeriaData from '../data/galeria.json'
 
 export default function Gallery() {
   const BASE = import.meta.env.BASE_URL
-  const images = [
-    {
-      url: `${BASE}productos/cosmoxt12-1.png`,
-      title: 'Cosmox T12 Leverless',
-      span: 'lg:col-span-8 lg:row-span-2'
-    },
-    {
-      url: `${BASE}productos/haute16-black.png`,
-      title: 'Haute42 C16 Negro',
-      span: 'lg:col-span-4 lg:row-span-1'
-    },
-    {
-      url: `${BASE}productos/guilekey16-white1.png`,
-      title: 'GuileKey G16 Blanco',
-      span: 'lg:col-span-4 lg:row-span-1'
-    },
-    {
-      url: `${BASE}productos/sapphire3.png`,
-      title: 'Sapphire Leverless',
-      span: 'lg:col-span-4 lg:row-span-2'
-    },
-    {
-      url: `${BASE}productos/brook-converter-ps5.png`,
-      title: 'Brook Wingman FGC',
-      span: 'lg:col-span-4 lg:row-span-1'
-    },
-    {
-      url: `${BASE}productos/white-buttons.png`,
-      title: 'Botones Premium',
-      span: 'lg:col-span-4 lg:row-span-1'
+  const [selectedImage, setSelectedImage] = useState(null)
+
+  // Handle ESC key to close modal
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setSelectedImage(null)
+      }
     }
-  ]
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [])
 
   return (
     <section id="galeria" className="py-24 relative overflow-hidden border-t border-white/5">
@@ -44,45 +27,43 @@ export default function Gallery() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="font-display text-xs font-bold text-brand-blue uppercase tracking-widest mb-3">
-            Product Showcase
+            Comunidad NeoGear
           </h2>
           <h3 className="font-sans text-3xl sm:text-4xl font-bold text-white mb-4">
             Galería de Equipamiento
           </h3>
           <p className="text-gray-400 font-light text-sm sm:text-base">
-            Echa un vistazo de cerca al hardware de máxima calidad que importamos. Componentes premium y periféricos listos para el juego competitivo.
+            Explora setups, torneos y el hardware de máxima calidad que nuestros clientes disfrutan en sus combates diarios.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-[220px]">
-          {images.map((img, idx) => (
+        {/* Dynamic Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+          {galeriaData.map((img, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.5, delay: idx * 0.08 }}
-              className={`group relative overflow-hidden rounded-3xl border border-white/5 bg-brand-card flex flex-col justify-end p-6 hover:border-brand-blue/20 transition-all duration-500 ${img.span}`}
+              transition={{ duration: 0.5, delay: idx * 0.05 }}
+              onClick={() => setSelectedImage(img)}
+              className="group relative overflow-hidden rounded-2xl border border-white/5 bg-brand-card flex flex-col justify-end p-4 hover:border-brand-blue/30 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-brand-blue/10"
             >
-              {/* Image */}
+              {/* Image Container with aspect crop */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src={img.url}
+                  src={`${BASE}${img.url}`}
                   alt={img.title}
                   loading="lazy"
-                  className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-out filter brightness-90 group-hover:brightness-75"
+                  className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out filter brightness-90 group-hover:brightness-75"
                 />
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/95 via-brand-dark/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
               </div>
 
               {/* Text Hover Content */}
-              <div className="relative z-10 text-left transform translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                <span className="text-[10px] text-brand-yellow font-bold uppercase tracking-widest">
-                  Importación Oficial
-                </span>
-                <h4 className="font-display font-bold text-lg text-white mt-1">
+              <div className="relative z-10 text-left transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                <h4 className="font-display font-bold text-sm text-white line-clamp-2">
                   {img.title}
                 </h4>
               </div>
@@ -90,6 +71,50 @@ export default function Gallery() {
           ))}
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-black/90 backdrop-blur-md"
+          >
+            {/* Close Button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}
+              className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-brand-blue text-white transition-colors duration-300 z-50"
+              aria-label="Cerrar galería"
+            >
+              <X size={24} />
+            </button>
+
+            {/* Modal Content */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative max-w-6xl max-h-[85vh] w-full h-full flex flex-col items-center justify-center"
+            >
+              <img
+                src={`${BASE}${selectedImage.url}`}
+                alt={selectedImage.title}
+                className="w-full h-full object-contain filter drop-shadow-2xl rounded-lg"
+              />
+              <div className="absolute bottom-[-40px] text-center text-white/70 text-sm tracking-widest uppercase font-bold">
+                {selectedImage.title}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }

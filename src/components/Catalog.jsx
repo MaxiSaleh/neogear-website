@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
 import productosData from '../data/productos.json'
+import ProductCard from './ProductCard'
 
 export default function Catalog() {
   const [activeFilter, setActiveFilter] = useState('Todos')
@@ -52,50 +52,7 @@ export default function Catalog() {
         >
           <AnimatePresence mode="popLayout">
             {filteredProducts.map((prod) => (
-              <motion.div
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-                key={prod.id}
-                className="group flex flex-col bg-brand-card border border-white/5 rounded-3xl overflow-hidden hover:border-brand-blue/30 transition-all duration-300 hover:-translate-y-1"
-              >
-                {/* Product Image Frame */}
-                <div className="aspect-[4/3] bg-brand-dark/50 relative overflow-hidden flex items-center justify-center p-6 border-b border-white/5">
-                  <img
-                    src={`${import.meta.env.BASE_URL}${prod.imagen.replace(/^\//, '')}`}
-                    alt={prod.nombre}
-                    loading="lazy"
-                    className="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)]"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full bg-brand-dark/80 backdrop-blur-sm border border-white/5 text-[10px] font-bold uppercase tracking-wider text-brand-yellow">
-                      {prod.categoria}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Product Text Content */}
-                <div className="p-6 flex flex-col flex-grow text-left">
-                  <h4 className="font-display font-bold text-lg text-white mb-4 group-hover:text-brand-yellow transition-colors duration-200">
-                    {prod.nombre}
-                  </h4>
-                  
-                  <div className="mt-auto pt-4 border-t border-white/5 flex items-center justify-between">
-                    <span className="text-[10px] text-gray-500 uppercase tracking-widest font-semibold">Consultar Venta</span>
-                    <a
-                      href={prod.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-blue hover:text-brand-yellow transition-colors group-hover:underline"
-                    >
-                      Ver en Instagram
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
+              <ProductCard key={prod.id} prod={prod} />
             ))}
           </AnimatePresence>
         </motion.div>

@@ -1,16 +1,34 @@
-# React + Vite
+# NeoGear Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web oficial de NeoGear Córdoba. Catálogo de productos, venta de hitbox, arcade sticks, repuestos arcade y tecnología para el juego competitivo.
 
-Currently, two official plugins are available:
+## Cambios Recientes (Actualizaciones)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El sitio ha sido refactorizado para automatizar la gestión de productos y galerías, mejorando la experiencia de usuario y facilitando el mantenimiento:
 
-## React Compiler
+### 1. Catálogo Dinámico con Carrusel
+- **Detección Automática de Productos:** El script `scripts/generate-catalog.js` lee la estructura de carpetas en `public/productos` (ej. `Hitbox Cover`, `Brook PS5 FGC1`) y construye dinámicamente `src/data/productos.json`.
+- **Carrusel Táctil:** Se implementó el componente `ProductCard.jsx`, el cual detecta cuando un producto tiene múltiples imágenes y genera automáticamente un carrusel navegable (con flechas, indicadores y scroll magnético `snap-x` ideal para móviles).
+- **Scripts de Build Automáticos:** Los *hooks* `predev` y `prebuild` en `package.json` garantizan que cualquier imagen agregada a las carpetas sea compilada sin necesidad de configuración manual.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Galería de Comunidad con Modal Inmersivo
+- **Galería Dinámica:** El script `scripts/generate-gallery.js` explora la carpeta `public/galeria` para auto-generar `src/data/galeria.json`.
+- **Grilla Responsiva:** El componente `Gallery.jsx` fue reescrito para usar una cuadrícula dinámica que adapta el número de columnas (de 2 a 4) según el dispositivo, empleando `object-cover` para mantener una estética unificada en las miniaturas.
+- **Lightbox (Modal):** Al hacer clic sobre cualquier imagen de la galería, esta se amplía usando Framer Motion con un overlay oscuro y efecto *blur*. Respeta proporciones originales (`object-contain`) y cuenta con múltiples opciones de cierre intuitivas (X, Escape, clic fuera).
 
-## Expanding the ESLint configuration
+### 3. Ajustes de UI & Contenido
+- **Logo Ampliado:** Se incrementó el tamaño del logo principal en el Navbar (de `h-10 md:h-12` a `h-16 md:h-20 lg:h-24`) para mayor presencia de marca.
+- **Actualización de Copy:** Se reemplazó el texto descriptivo del Footer a *"Venta de hitbox, arcade stick, repuestos arcade y tecnología. De Córdoba al resto del país."* corrigiendo errores ortográficos y adaptando el mensaje al modelo de negocio de ventas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Desarrollo Local
+
+```bash
+# Instalar dependencias
+npm install
+
+# Correr servidor de desarrollo (los scripts predev actualizarán los JSONs automáticamente)
+npm run dev
+
+# Compilar para producción (los scripts prebuild preparan el catálogo y la galería)
+npm run build
+```

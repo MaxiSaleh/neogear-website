@@ -7,32 +7,32 @@ export default function Categories() {
     {
       name: 'Hitbox',
       desc: 'Controladores sin palanca (leverless) para máxima velocidad de ejecución y precisión de inputs.',
-      image: `${BASE}productos/hitbox-cover.png`,
+      image: `${BASE}productos/Hitbox Cover/hitbox-cover.png`,
       size: 'md:col-span-6 lg:col-span-7'
     },
     {
       name: 'Arcade Sticks',
-      desc: 'El feeling clásico del salón arcade combinado con tecnología competitiva moderna.',
-      image: `${BASE}productos/sapphire1.png`,
+      desc: 'Fightsticks clásicos para la experiencia arcade purista. Ideales para Tekken y Street Fighter.',
+      image: `${BASE}productos/Qanba Sapphire/sapphire1.png`,
       size: 'md:col-span-6 lg:col-span-5'
     },
     {
       name: 'Joysticks',
-      desc: 'Palancas de alta gama, tensores y restrictores para una calibración milimétrica.',
-      image: `${BASE}productos/sanwa-jlf-joy-white.png`,
-      size: 'md:col-span-6 lg:col-span-4'
+      desc: 'Palancas Sanwa JLF, Seimitsu y repuestos para mantener la precisión de tus movimientos.',
+      image: `${BASE}productos/Sanwa JLF Joystick (black-white)/sanwa-jlf-joy-white.png`,
+      size: 'md:col-span-4'
     },
     {
       name: 'Repuestos',
-      desc: 'Botones premium, microswitches silenciosos, encoders USB y todo para tu modding.',
-      image: `${BASE}productos/white-buttons&joy.png`,
-      size: 'md:col-span-6 lg:col-span-4'
+      desc: 'Botones mecánicos, switches, cables y accesorios para customizar y reparar tu equipo.',
+      image: `${BASE}productos/Sanwa Combo Joystick + 8 buttons/white-buttons&joy.png`,
+      size: 'md:col-span-4'
     },
     {
       name: 'Tecnología',
-      desc: 'Accesorios inteligentes, adaptadores multi-consola y conversores para todas las plataformas.',
-      image: `${BASE}productos/brook-converter-ps5.png`,
-      size: 'md:col-span-12 lg:col-span-4'
+      desc: 'Conversores Brook, placas universales y módulos para compatibilidad multiplataforma.',
+      image: `${BASE}productos/Brook PS5 FGC2/brook-converter-ps5.png`,
+      size: 'md:col-span-4'
     }
   ]
 

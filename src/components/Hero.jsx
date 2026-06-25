@@ -103,7 +103,7 @@ export default function Hero() {
               initial={{ y: 0 }}
               animate={{ y: [-8, 8, -8] }}
               transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
-              src={`${import.meta.env.BASE_URL}productos/cosmoxt12-2.png`}
+              src={`${import.meta.env.BASE_URL}productos/Haute42 Cosmox T12/cosmoxt12-2.png`}
               alt="Cosmox T12 Leverless"
               className="w-[90%] h-auto rounded-3xl border border-white/10 object-cover shadow-2xl filter drop-shadow-[0_20px_50px_rgba(0,85,212,0.25)]"
             />

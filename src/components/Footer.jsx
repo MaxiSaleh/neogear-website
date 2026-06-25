@@ -10,7 +10,7 @@ export default function Footer() {
             <img src={`${import.meta.env.BASE_URL}logo.png`} alt="NeoGear Logo" className="h-10 md:h-12 w-auto object-contain" />
           </a>
           <p className="text-gray-400 text-sm font-light leading-relaxed max-w-sm mb-6">
-            Fabricantes de mandos de pelea y periféricos gamer de precisión en Córdoba, Argentina. Llevamos tu juego al máximo rendimiento competitivo.
+            Venta de hitbox, arcade stick, repuestos arcade y tecnología. De Córdoba al resto del país.
           </p>
           <div className="flex items-center gap-2 text-xs text-gray-500 font-medium">
             <MapPin className="w-4 h-4 text-brand-blue" />

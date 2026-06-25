@@ -1,121 +1,204 @@
 [
   {
-    "id": "cosmox-t12-1",
-    "nombre": "Cosmox T12 Leverless",
-    "categoria": "Hitbox",
-    "imagen": "productos/cosmoxt12-1.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "cosmox-t12-2",
-    "nombre": "Cosmox T12 Leverless (Vista Lateral)",
-    "categoria": "Hitbox",
-    "imagen": "productos/cosmoxt12-2.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "haute16-black",
-    "nombre": "Haute42 C16 (Negro)",
-    "categoria": "Hitbox",
-    "imagen": "productos/haute16-black.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "haute16-white",
-    "nombre": "Haute42 C16 (Blanco)",
-    "categoria": "Hitbox",
-    "imagen": "productos/haute16-white.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "haute13-white",
-    "nombre": "Haute42 C13 (Blanco)",
-    "categoria": "Hitbox",
-    "imagen": "productos/haute13-white.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "haute13-big-white",
-    "nombre": "Haute42 C13 Big (Blanco)",
-    "categoria": "Hitbox",
-    "imagen": "productos/haute13-big-white.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "guilekey16-black",
-    "nombre": "GuileKey G16 (Negro)",
-    "categoria": "Hitbox",
-    "imagen": "productos/guilekey16-black.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "guilekey16-white",
-    "nombre": "GuileKey G16 (Blanco)",
-    "categoria": "Hitbox",
-    "imagen": "productos/guilekey16-white1.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "m16plus-black",
-    "nombre": "M16+ Leverless (Negro)",
-    "categoria": "Hitbox",
-    "imagen": "productos/m16plus-black.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "sapphire-hitbox-1",
-    "nombre": "Sapphire Leverless",
-    "categoria": "Hitbox",
-    "imagen": "productos/sapphire1.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "brook-fgc1",
-    "nombre": "Brook Wingman FGC 1",
+    "id": "brook-ps5-fgc1",
+    "nombre": "Brook PS5 FGC1",
     "categoria": "Tecnología",
-    "imagen": "productos/brook-converter-ps5.png",
+    "imagenes": [
+      "productos/Brook PS5 FGC1/Brook_FGC1.png",
+      "productos/Brook PS5 FGC1/Brook_FGC1_Front.png"
+    ],
+    "imagen": "productos/Brook PS5 FGC1/Brook_FGC1.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "brook-fgc2",
-    "nombre": "Brook Wingman FGC 2 (PS5/PC)",
+    "id": "brook-ps5-fgc2",
+    "nombre": "Brook PS5 FGC2",
     "categoria": "Tecnología",
-    "imagen": "productos/brook-wingman-fgc2.jpg",
+    "imagenes": [
+      "productos/Brook PS5 FGC2/brook-converter-ps5.png",
+      "productos/Brook PS5 FGC2/brook-wingman-fgc2-alt.jpg",
+      "productos/Brook PS5 FGC2/brook-wingman-fgc2.jpg"
+    ],
+    "imagen": "productos/Brook PS5 FGC2/brook-converter-ps5.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   },
   {
-    "id": "sanwa-jlf-black",
-    "nombre": "Joystick Sanwa JLF (Negro)",
+    "id": "haute42-cosmox-c-16",
+    "nombre": "Haute42 Cosmox C-16",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 Cosmox C-16/cosmox_c16_1.png",
+      "productos/Haute42 Cosmox C-16/cosmox_c16_2.png",
+      "productos/Haute42 Cosmox C-16/cosmox_c16_3.png",
+      "productos/Haute42 Cosmox C-16/cosmox_c16_4.png",
+      "productos/Haute42 Cosmox C-16/cosmox_c16_5.png",
+      "productos/Haute42 Cosmox C-16/cosmox_c16_6.png",
+      "productos/Haute42 Cosmox C-16/cosmox_c16_7.png"
+    ],
+    "imagen": "productos/Haute42 Cosmox C-16/cosmox_c16_1.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-cosmox-t12",
+    "nombre": "Haute42 Cosmox T12",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 Cosmox T12/cosmoxt12-1.png",
+      "productos/Haute42 Cosmox T12/cosmoxt12-2.png",
+      "productos/Haute42 Cosmox T12/cosmoxt12-3.png",
+      "productos/Haute42 Cosmox T12/cosmoxt12-4.png"
+    ],
+    "imagen": "productos/Haute42 Cosmox T12/cosmoxt12-1.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-g-13",
+    "nombre": "Haute42 G-13",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 G-13/haute13-white.png",
+      "productos/Haute42 G-13/haute13-white2.png",
+      "productos/Haute42 G-13/haute13-white3.png"
+    ],
+    "imagen": "productos/Haute42 G-13/haute13-white.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-guillekeys-gk-16-black",
+    "nombre": "Haute42 GuilleKeys GK-16 Black",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 GuilleKeys GK-16 Black/guilekey16-black.png",
+      "productos/Haute42 GuilleKeys GK-16 Black/guilekey16-black2.png",
+      "productos/Haute42 GuilleKeys GK-16 Black/guilekey16-black3.png",
+      "productos/Haute42 GuilleKeys GK-16 Black/guilekey16-black4.png"
+    ],
+    "imagen": "productos/Haute42 GuilleKeys GK-16 Black/guilekey16-black.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-guillekeys-gk-16-white",
+    "nombre": "Haute42 GuilleKeys GK-16 White",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 GuilleKeys GK-16 White/guilekey16-white1.png",
+      "productos/Haute42 GuilleKeys GK-16 White/guilekey16-white2.png",
+      "productos/Haute42 GuilleKeys GK-16 White/guilekey16-white3.png",
+      "productos/Haute42 GuilleKeys GK-16 White/guilekey16-white4.png",
+      "productos/Haute42 GuilleKeys GK-16 White/guilekey16-white5.png"
+    ],
+    "imagen": "productos/Haute42 GuilleKeys GK-16 White/guilekey16-white1.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-m-16-plus-black",
+    "nombre": "Haute42 M-16 Plus Black",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 M-16 Plus Black/m16plus-black.png",
+      "productos/Haute42 M-16 Plus Black/m16plus-black1.png",
+      "productos/Haute42 M-16 Plus Black/m16plus-black2.png",
+      "productos/Haute42 M-16 Plus Black/m16plus-black3.png",
+      "productos/Haute42 M-16 Plus Black/m16plus-black4.png"
+    ],
+    "imagen": "productos/Haute42 M-16 Plus Black/m16plus-black.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-s-16",
+    "nombre": "Haute42 S-16",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 S-16/haute16-white.png",
+      "productos/Haute42 S-16/haute16-white2.png",
+      "productos/Haute42 S-16/haute16-white3.png"
+    ],
+    "imagen": "productos/Haute42 S-16/haute16-white.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-t-13",
+    "nombre": "Haute42 T-13",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 T-13/haute13-big-white.png",
+      "productos/Haute42 T-13/haute13-big-white2.png",
+      "productos/Haute42 T-13/haute13-big.white3.png"
+    ],
+    "imagen": "productos/Haute42 T-13/haute13-big-white.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "haute42-u16-black",
+    "nombre": "Haute42 U16 Black",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Haute42 U16 Black/haute16-black.png",
+      "productos/Haute42 U16 Black/haute16-black2.png",
+      "productos/Haute42 U16 Black/haute16-black3.png",
+      "productos/Haute42 U16 Black/haute16-black4.png",
+      "productos/Haute42 U16 Black/haute16-black5.png"
+    ],
+    "imagen": "productos/Haute42 U16 Black/haute16-black.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "hitbox-cover",
+    "nombre": "Hitbox Cover",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Hitbox Cover/hitbox-cover.png"
+    ],
+    "imagen": "productos/Hitbox Cover/hitbox-cover.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "qanba-sapphire",
+    "nombre": "Qanba Sapphire",
+    "categoria": "Hitbox",
+    "imagenes": [
+      "productos/Qanba Sapphire/sapphire1.png",
+      "productos/Qanba Sapphire/sapphire2.png",
+      "productos/Qanba Sapphire/sapphire3.png",
+      "productos/Qanba Sapphire/sapphire4.png",
+      "productos/Qanba Sapphire/sapphire5.png",
+      "productos/Qanba Sapphire/sapphire6.png"
+    ],
+    "imagen": "productos/Qanba Sapphire/sapphire1.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "sanwa-buttons-30mm-white-black",
+    "nombre": "Sanwa Buttons 30mm (white-black)",
+    "categoria": "Repuestos",
+    "imagenes": [
+      "productos/Sanwa Buttons 30mm (white-black)/black-buttons.png",
+      "productos/Sanwa Buttons 30mm (white-black)/black-buttons2.png",
+      "productos/Sanwa Buttons 30mm (white-black)/white-buttons.png",
+      "productos/Sanwa Buttons 30mm (white-black)/white-buttons2.png"
+    ],
+    "imagen": "productos/Sanwa Buttons 30mm (white-black)/black-buttons.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "sanwa-combo-joystick-8-buttons",
+    "nombre": "Sanwa Combo Joystick + 8 buttons",
+    "categoria": "Repuestos",
+    "imagenes": [
+      "productos/Sanwa Combo Joystick + 8 buttons/white-buttons&joy.png"
+    ],
+    "imagen": "productos/Sanwa Combo Joystick + 8 buttons/white-buttons&joy.png",
+    "instagram": "https://www.instagram.com/neogearcba/"
+  },
+  {
+    "id": "sanwa-jlf-joystick-black-white",
+    "nombre": "Sanwa JLF Joystick (black-white)",
     "categoria": "Joysticks",
-    "imagen": "productos/sanwa-jlf-joy-black.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "sanwa-jlf-white",
-    "nombre": "Joystick Sanwa JLF (Blanco)",
-    "categoria": "Joysticks",
-    "imagen": "productos/sanwa-jlf-joy-white.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "black-buttons",
-    "nombre": "Botones Premium (Negro, Pack x10)",
-    "categoria": "Repuestos",
-    "imagen": "productos/black-buttons.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "white-buttons",
-    "nombre": "Botones Premium (Blanco, Pack x10)",
-    "categoria": "Repuestos",
-    "imagen": "productos/white-buttons.png",
-    "instagram": "https://www.instagram.com/neogearcba/"
-  },
-  {
-    "id": "white-buttons-joy",
-    "nombre": "Kit Botones + Joystick (Blanco)",
-    "categoria": "Repuestos",
-    "imagen": "productos/white-buttons&joy.png",
+    "imagenes": [
+      "productos/Sanwa JLF Joystick (black-white)/sanwa-jlf-joy-black.png",
+      "productos/Sanwa JLF Joystick (black-white)/sanwa-jlf-joy-white.png"
+    ],
+    "imagen": "productos/Sanwa JLF Joystick (black-white)/sanwa-jlf-joy-black.png",
     "instagram": "https://www.instagram.com/neogearcba/"
   }
 ]
