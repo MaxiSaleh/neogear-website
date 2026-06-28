@@ -35,7 +35,7 @@ export default function About() {
   }
 
   return (
-    <section id="sobre-nosotros" className="py-24 bg-brand-dark/40 relative border-y border-white/5">
+    <section id="sobre-nosotros" className="py-24 bg-brand-dark-40 relative border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left Description */}
@@ -78,9 +78,9 @@ export default function About() {
                 <motion.div
                   key={idx}
                   variants={itemVariants}
-                  className="glass p-6 rounded-2xl flex gap-6 items-start text-left hover:border-brand-blue/20 hover:bg-brand-card/50 transition-all duration-300 group"
+                  className="glass p-6 rounded-2xl flex gap-6 items-start text-left hover:border-brand-blue/20 hover:bg-brand-card-50 transition-all duration-300 group"
                 >
-                  <div className="p-3.5 rounded-xl bg-brand-dark border border-white/5 group-hover:border-brand-blue/30 group-hover:bg-brand-blue/10 transition-colors duration-300">
+                  <div className="p-3.5 rounded-xl bg-brand-dark border border-white/5 group-hover:border-brand-blue/30 group-hover:bg-brand-blue-10 transition-colors duration-300">
                     {pillar.icon}
                   </div>
                   <div>

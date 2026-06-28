@@ -111,3 +111,18 @@ body {
   grid-auto-rows: 200px;
   gap: 1.5rem;
 }
+
+/* Explicit cross-browser opacity classes to fix Tailwind v4 color-mix issues on Chrome */
+.bg-brand-dark-20 { background-color: rgba(4, 8, 17, 0.2); }
+.bg-brand-dark-40 { background-color: rgba(4, 8, 17, 0.4); }
+.bg-brand-dark-50 { background-color: rgba(4, 8, 17, 0.5); }
+.bg-brand-dark-80 { background-color: rgba(4, 8, 17, 0.8); }
+.bg-brand-dark-95 { background-color: rgba(4, 8, 17, 0.95); }
+.bg-brand-card-85 { background-color: rgba(13, 20, 36, 0.85); }
+.bg-brand-card-50 { background-color: rgba(13, 20, 36, 0.5); }
+.bg-brand-blue-10 { background-color: rgba(0, 85, 212, 0.1); }
+.bg-brand-blue-20 { background-color: rgba(0, 85, 212, 0.2); }
+.hover\:bg-brand-blue-10:hover { background-color: rgba(0, 85, 212, 0.1); }
+.hover\:bg-brand-blue-20:hover { background-color: rgba(0, 85, 212, 0.2); }
+.group-hover\:bg-brand-blue-10:hover { background-color: rgba(0, 85, 212, 0.1); }
+.group-hover\:bg-brand-blue-20:hover { background-color: rgba(0, 85, 212, 0.2); }

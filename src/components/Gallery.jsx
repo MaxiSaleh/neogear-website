@@ -66,8 +66,8 @@ export default function Gallery() {
                   loading="lazy"
                   className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out filter brightness-90 group-hover:brightness-75"
                 />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/95 via-brand-dark/20 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
+                {/* Overlay gradient - explicit inline style for cross-browser compat */}
+                <div className="absolute inset-0 opacity-70 group-hover:opacity-90 transition-opacity duration-300" style={{ background: 'linear-gradient(to top, rgba(4,8,17,0.95) 0%, rgba(4,8,17,0.2) 50%, transparent 100%)' }}></div>
               </div>
 
               {/* Text Hover Content */}

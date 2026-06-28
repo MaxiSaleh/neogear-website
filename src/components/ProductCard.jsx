@@ -47,7 +47,7 @@ export default function ProductCard({ prod }) {
       className="group flex flex-col bg-brand-card border border-white/5 rounded-3xl overflow-hidden hover:border-brand-blue/30 transition-all duration-300 hover:-translate-y-1"
     >
       {/* Product Image Frame (Carousel) */}
-      <div className="aspect-[4/3] bg-brand-dark/50 relative overflow-hidden flex items-center justify-center border-b border-white/5">
+      <div className="aspect-[4/3] bg-brand-dark-50 relative overflow-hidden flex items-center justify-center border-b border-white/5">
         
         <div 
           ref={scrollRef}
@@ -69,7 +69,7 @@ export default function ProductCard({ prod }) {
 
         {/* Floating Category Badge */}
         <div className="absolute top-4 left-4 z-10 pointer-events-none">
-          <span className="px-3 py-1 rounded-full bg-brand-dark/80 backdrop-blur-sm border border-white/5 text-[10px] font-bold uppercase tracking-wider text-brand-yellow">
+          <span className="px-3 py-1 rounded-full bg-brand-dark-80 backdrop-blur-sm border border-white/5 text-[10px] font-bold uppercase tracking-wider text-brand-yellow">
             {prod.categoria}
           </span>
         </div>

@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed inset-0 top-[60px] z-40 bg-brand-dark/95 backdrop-blur-lg md:hidden transition-all duration-300 ease-in-out border-t border-white/5 ${
+        className={`fixed inset-0 top-[60px] z-40 bg-brand-dark-95 backdrop-blur-lg md:hidden transition-all duration-300 ease-in-out border-t border-white/5 ${
           isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
         }`}
       >

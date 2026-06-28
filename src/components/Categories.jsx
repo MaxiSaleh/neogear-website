@@ -83,12 +83,12 @@ export default function Categories() {
                   className="w-full h-full object-cover opacity-35 scale-100 group-hover:scale-105 transition-transform duration-700 ease-out filter brightness-75"
                   loading="lazy"
                 />
-                {/* Dark gradient overlap */}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent"></div>
+                {/* Dark gradient overlap - explicit inline style for cross-browser compat */}
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #040811 0%, rgba(4,8,17,0.6) 50%, transparent 100%)' }}></div>
               </div>
 
               {/* Action Indicator Icon */}
-              <div className="absolute top-6 right-6 w-10 h-10 rounded-full border border-white/10 flex items-center justify-center bg-brand-dark/50 backdrop-blur-md text-white group-hover:text-brand-yellow group-hover:border-brand-blue/30 transition-all duration-300 transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+              <div className="absolute top-6 right-6 w-10 h-10 rounded-full border border-white/10 flex items-center justify-center bg-brand-dark-50 backdrop-blur-md text-white group-hover:text-brand-yellow group-hover:border-brand-blue/30 transition-all duration-300 transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
                 <ArrowUpRight className="w-5 h-5" />
               </div>
 

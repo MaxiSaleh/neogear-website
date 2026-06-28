@@ -56,10 +56,10 @@ export default function Footer() {
               href="https://www.instagram.com/neogearcba/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-3.5 rounded-2xl bg-brand-card hover:bg-brand-blue/10 border border-white/5 hover:border-brand-blue/20 text-gray-300 hover:text-white transition-all group"
+              className="flex items-center justify-between p-3.5 rounded-2xl bg-brand-card hover:bg-brand-blue-10 border border-white/5 hover:border-brand-blue/20 text-gray-300 hover:text-white transition-all group"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-brand-dark group-hover:bg-brand-blue/20 group-hover:text-brand-yellow transition-colors">
+                <div className="p-2 rounded-xl bg-brand-dark group-hover:bg-brand-blue-20 group-hover:text-brand-yellow transition-colors">
                   <svg className="w-5 h-5 text-gray-400 group-hover:text-brand-yellow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
                 </div>
                 <div>
@@ -74,10 +74,10 @@ export default function Footer() {
               href="https://wa.me/543513949988"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-3.5 rounded-2xl bg-brand-card hover:bg-brand-blue/10 border border-white/5 hover:border-brand-blue/20 text-gray-300 hover:text-white transition-all group"
+              className="flex items-center justify-between p-3.5 rounded-2xl bg-brand-card hover:bg-brand-blue-10 border border-white/5 hover:border-brand-blue/20 text-gray-300 hover:text-white transition-all group"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-brand-dark group-hover:bg-brand-blue/20 group-hover:text-brand-yellow transition-colors">
+                <div className="p-2 rounded-xl bg-brand-dark group-hover:bg-brand-blue-20 group-hover:text-brand-yellow transition-colors">
                   <MessageCircle className="w-5 h-5 text-gray-400 group-hover:text-brand-yellow animate-pulse" />
                 </div>
                 <div>
