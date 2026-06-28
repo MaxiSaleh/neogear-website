@@ -3,63 +3,57 @@ import { ArrowRight } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
-      {/* Sega Model 2 Retro Sky & Perspective Floor Grid */}
-      <div className="absolute inset-0 overflow-hidden -z-20">
-        {/* Sky gradient background - inline style for cross-browser compat */}
-        <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(to bottom, #03060f, #05132e, #040811)' }}
-        ></div>
-        
-        {/* Retro perspective grid plane */}
-        <div
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 border-t border-brand-blue/30"
-          style={{
-            width: '200%',
-            height: '55%',
-            transformOrigin: 'top center',
-            transform: 'perspective(400px) rotateX(60deg)',
-            backgroundImage: 'linear-gradient(to bottom, rgba(0,85,212,0.12) 1px, transparent 1px), linear-gradient(to right, rgba(0,85,212,0.12) 1px, transparent 1px)',
-            backgroundSize: '45px 45px',
-          }}
-        ></div>
-        
-        {/* Dark radial glow mask */}
-        <div
-          className="absolute inset-0"
-          style={{ background: 'radial-gradient(ellipse at 50% 60%, transparent 20%, #040811 80%)' }}
-        ></div>
-        {/* Bottom fade */}
-        <div
-          className="absolute bottom-0 left-0 w-full"
-          style={{ height: '30%', background: 'linear-gradient(to top, #040811, transparent)' }}
-        ></div>
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden"
+      style={{ background: 'linear-gradient(to bottom, #03060f 0%, #05132e 45%, #040811 100%)' }}
+    >
+      {/* Retro perspective grid plane */}
+      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '55%', overflow: 'hidden', zIndex: 1 }}>
+        <div style={{
+          position: 'absolute',
+          bottom: 0,
+          left: '50%',
+          width: '200%',
+          height: '100%',
+          transform: 'translateX(-50%) perspective(400px) rotateX(60deg)',
+          transformOrigin: 'top center',
+          backgroundImage: 'linear-gradient(to bottom, rgba(0,85,212,0.15) 1px, transparent 1px), linear-gradient(to right, rgba(0,85,212,0.15) 1px, transparent 1px)',
+          backgroundSize: '45px 45px',
+          borderTop: '1px solid rgba(0,85,212,0.3)',
+        }} />
       </div>
 
-      {/* Background Neon Ambient Glows - inline style for cross-browser compat */}
-      <div
-        className="absolute rounded-full -z-10 animate-pulse"
-        style={{
-          top: '20%', left: '10%',
-          width: '35rem', height: '35rem',
-          background: 'rgba(0, 85, 212, 0.05)',
-          filter: 'blur(120px)',
-          animationDuration: '6s',
-        }}
-      ></div>
-      <div
-        className="absolute rounded-full -z-10 animate-pulse"
-        style={{
-          bottom: '20%', right: '10%',
-          width: '30rem', height: '30rem',
-          background: 'rgba(255, 69, 0, 0.05)',
-          filter: 'blur(100px)',
-          animationDuration: '4s',
-        }}
-      ></div>
+      {/* Radial fade mask over grid */}
+      <div style={{
+        position: 'absolute', inset: 0, zIndex: 2,
+        background: 'radial-gradient(ellipse at 50% 60%, transparent 20%, #040811 80%)',
+      }} />
 
-      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      {/* Bottom fade */}
+      <div style={{
+        position: 'absolute', bottom: 0, left: 0, right: 0, height: '30%', zIndex: 2,
+        background: 'linear-gradient(to top, #040811, transparent)',
+      }} />
+
+      {/* Ambient glow — blue */}
+      <div style={{
+        position: 'absolute', top: '20%', left: '10%', zIndex: 2,
+        width: '35rem', height: '35rem', borderRadius: '50%',
+        background: 'rgba(0, 85, 212, 0.08)',
+        filter: 'blur(120px)',
+      }} />
+
+      {/* Ambient glow — orange */}
+      <div style={{
+        position: 'absolute', bottom: '20%', right: '10%', zIndex: 2,
+        width: '30rem', height: '30rem', borderRadius: '50%',
+        background: 'rgba(255, 69, 0, 0.08)',
+        filter: 'blur(100px)',
+      }} />
+
+      {/* Content — above all backgrounds */}
+      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center" style={{ position: 'relative', zIndex: 10 }}>
         {/* Left Side Content */}
         <div className="lg:col-span-6 flex flex-col items-start text-left">
           <motion.div
