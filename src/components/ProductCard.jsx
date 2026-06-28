@@ -2,12 +2,12 @@ import { useState, useRef } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export default function ProductCard({ prod }) {
+export default function ProductCard({ prod, onImageClick }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef(null);
 
-  const hasMultiple = prod.imagenes && prod.imagenes.length > 1;
-  const images = prod.imagenes || [prod.imagen];
+  const images = prod.imagenes && prod.imagenes.length > 0 ? prod.imagenes : [prod.imagen];
+  const hasMultiple = images.length > 1;
 
   const handleScroll = () => {
     if (scrollRef.current) {
@@ -61,7 +61,8 @@ export default function ProductCard({ prod }) {
                 src={`${import.meta.env.BASE_URL}${imgUrl.replace(/^\//, '').split('/').map(encodeURIComponent).join('/')}`}
                 alt={`${prod.nombre} - vista ${idx + 1}`}
                 loading="lazy"
-                className="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)]"
+                onClick={() => onImageClick && onImageClick(imgUrl, prod.nombre)}
+                className="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)] cursor-pointer"
               />
             </div>
           ))}
