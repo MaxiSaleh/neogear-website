@@ -6,31 +6,58 @@ export default function Hero() {
     <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
       {/* Sega Model 2 Retro Sky & Perspective Floor Grid */}
       <div className="absolute inset-0 overflow-hidden -z-20">
-        {/* Sky gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#03060f] via-[#05132e] to-[#040811]"></div>
-        
-        {/* Retro perspective grid plane (Sega Virtua/Daytona style) - inline style for GH Pages compat */}
+        {/* Sky gradient background - inline style for cross-browser compat */}
         <div
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[200%] h-[55%] origin-top border-t border-brand-blue/30"
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(to bottom, #03060f, #05132e, #040811)' }}
+        ></div>
+        
+        {/* Retro perspective grid plane */}
+        <div
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 border-t border-brand-blue/30"
           style={{
-            transform: 'perspective(400px) rotateX(60deg)',
+            width: '200%',
+            height: '55%',
             transformOrigin: 'top center',
+            transform: 'perspective(400px) rotateX(60deg)',
             backgroundImage: 'linear-gradient(to bottom, rgba(0,85,212,0.12) 1px, transparent 1px), linear-gradient(to right, rgba(0,85,212,0.12) 1px, transparent 1px)',
             backgroundSize: '45px 45px',
           }}
         ></div>
         
-        {/* Dark radial glow mask to fade grid at the horizon and sides - inline style for GH Pages compat */}
+        {/* Dark radial glow mask */}
         <div
           className="absolute inset-0"
           style={{ background: 'radial-gradient(ellipse at 50% 60%, transparent 20%, #040811 80%)' }}
         ></div>
-        <div className="absolute bottom-0 left-0 w-full h-[30%] bg-gradient-to-t from-[#040811] to-transparent"></div>
+        {/* Bottom fade */}
+        <div
+          className="absolute bottom-0 left-0 w-full"
+          style={{ height: '30%', background: 'linear-gradient(to top, #040811, transparent)' }}
+        ></div>
       </div>
 
-      {/* Background Neon Ambient Glows */}
-      <div className="absolute top-[20%] left-[10%] w-[35rem] h-[35rem] rounded-full bg-brand-blue/5 blur-[120px] -z-10 animate-pulse duration-[6s]"></div>
-      <div className="absolute bottom-[20%] right-[10%] w-[30rem] h-[30rem] rounded-full bg-brand-orange/5 blur-[100px] -z-10 animate-pulse duration-[4s]"></div>
+      {/* Background Neon Ambient Glows - inline style for cross-browser compat */}
+      <div
+        className="absolute rounded-full -z-10 animate-pulse"
+        style={{
+          top: '20%', left: '10%',
+          width: '35rem', height: '35rem',
+          background: 'rgba(0, 85, 212, 0.05)',
+          filter: 'blur(120px)',
+          animationDuration: '6s',
+        }}
+      ></div>
+      <div
+        className="absolute rounded-full -z-10 animate-pulse"
+        style={{
+          bottom: '20%', right: '10%',
+          width: '30rem', height: '30rem',
+          background: 'rgba(255, 69, 0, 0.05)',
+          filter: 'blur(100px)',
+          animationDuration: '4s',
+        }}
+      ></div>
 
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         {/* Left Side Content */}
@@ -100,14 +127,20 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative w-full max-w-[450px] aspect-square flex items-center justify-center"
           >
-            {/* Glowing Ring Background */}
-            <div className="absolute inset-4 rounded-full border border-brand-blue/15 -z-10 animate-[spin_40s_linear_infinite]">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-yellow/50 blur-xs"></div>
+            {/* Glowing Ring Background - inline keyframe animations via style */}
+            <div
+              className="absolute inset-4 rounded-full border border-brand-blue/15 -z-10"
+              style={{ animation: 'spin 40s linear infinite' }}
+            >
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-yellow/50" style={{ filter: 'blur(2px)' }}></div>
             </div>
-            <div className="absolute inset-16 rounded-full border border-white/5 -z-10 animate-[spin_20s_linear_infinite_reverse]"></div>
+            <div
+              className="absolute inset-16 rounded-full border border-white/5 -z-10"
+              style={{ animation: 'spin 20s linear infinite reverse' }}
+            ></div>
 
             {/* Glowing Tech Plate Backdrop */}
-            <div className="absolute w-[80%] h-[80%] rounded-[2rem] bg-gradient-to-tr from-brand-blue/10 to-brand-orange/5 border border-white/5 -z-10 rotate-12 glow-blue"></div>
+            <div className="absolute w-4/5 h-4/5 rounded-[2rem] border border-white/5 -z-10 rotate-12 glow-blue" style={{ background: 'linear-gradient(to top right, rgba(0,85,212,0.10), rgba(255,69,0,0.05))' }}></div>
 
             {/* Featured Product Image */}
             <motion.img
@@ -116,7 +149,8 @@ export default function Hero() {
               transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
               src={`${import.meta.env.BASE_URL}${'productos/Haute42 Cosmox T12/cosmoxt12-2.png'.split('/').map(encodeURIComponent).join('/')}`}
               alt="Cosmox T12 Leverless"
-              className="w-[90%] h-auto rounded-3xl border border-white/10 object-cover shadow-2xl filter drop-shadow-[0_20px_50px_rgba(0,85,212,0.25)]"
+              className="w-[90%] h-auto rounded-3xl border border-white/10 object-cover shadow-2xl"
+              style={{ filter: 'drop-shadow(0 20px 50px rgba(0,85,212,0.25))' }}
             />
           </motion.div>
         </div>

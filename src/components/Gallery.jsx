@@ -20,8 +20,17 @@ export default function Gallery() {
 
   return (
     <section id="galeria" className="py-24 relative overflow-hidden border-t border-white/5">
-      {/* Ambient background glows */}
-      <div className="absolute bottom-0 right-[20%] w-[30rem] h-[30rem] rounded-full bg-brand-blue/3 blur-[120px] -z-10"></div>
+      {/* Ambient background glows - inline style for cross-browser compat */}
+      <div
+        className="absolute bottom-0 rounded-full -z-10"
+        style={{
+          right: '20%',
+          width: '30rem',
+          height: '30rem',
+          background: 'rgba(0, 85, 212, 0.03)',
+          filter: 'blur(120px)',
+        }}
+      ></div>
 
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}

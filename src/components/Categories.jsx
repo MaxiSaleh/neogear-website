@@ -39,8 +39,16 @@ export default function Categories() {
 
   return (
     <section id="categorias" className="py-24 relative overflow-hidden">
-      {/* Background radial highlight */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60rem] h-[60rem] rounded-full bg-brand-blue/2 blur-[150px] -z-10"></div>
+      {/* Background radial highlight - inline style for cross-browser compat */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full -z-10"
+        style={{
+          width: '60rem',
+          height: '60rem',
+          background: 'rgba(0, 85, 212, 0.02)',
+          filter: 'blur(150px)',
+        }}
+      ></div>
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">

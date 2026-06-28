@@ -17,6 +17,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Ensure spin keyframes are always available (used by Hero ring animations via inline styles) */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 body {
   background-color: #040811;
   color: #f3f4f6;
