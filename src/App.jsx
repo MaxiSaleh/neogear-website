@@ -12,10 +12,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <About />
         <Categories />
         <Catalog />
         <Gallery />
+        <About />
       </main>
       <Footer />
     </div>

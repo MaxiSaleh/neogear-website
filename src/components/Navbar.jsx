@@ -19,10 +19,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Inicio', href: '#inicio' },
-    { name: 'Sobre Nosotros', href: '#sobre-nosotros' },
     { name: 'Categorías', href: '#categorias' },
     { name: 'Catálogo', href: '#catalogo' },
     { name: 'Galería', href: '#galeria' },
+    { name: 'Sobre Nosotros', href: '#sobre-nosotros' },
     { name: 'Contacto', href: '#contacto' }
   ]
 
