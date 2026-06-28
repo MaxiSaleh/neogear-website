@@ -141,8 +141,8 @@ export default function Hero() {
               initial={{ y: 0 }}
               animate={{ y: [-8, 8, -8] }}
               transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
-              src={`${import.meta.env.BASE_URL}${'productos/Haute42 Cosmox T12/cosmoxt12-2.png'.split('/').map(encodeURIComponent).join('/')}`}
-              alt="Cosmox T12 Leverless"
+              src={`${import.meta.env.BASE_URL}${'productos/Qanba Sapphire/sapphire3.png'.split('/').map(encodeURIComponent).join('/')}`}
+              alt="Qanba Sapphire"
               className="w-[90%] h-auto rounded-3xl border border-white/10 object-cover shadow-2xl"
               style={{ filter: 'drop-shadow(0 20px 50px rgba(0,85,212,0.25))' }}
             />
